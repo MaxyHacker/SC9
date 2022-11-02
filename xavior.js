@@ -2823,8 +2823,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
                 listMessage :{
                     title: `Bot by andymrlit\n`,
                     description: "*please choose*",
-                    buttonText: "Menu",
-                    footerText: "do not spam!!",
+                    buttonText: "Menu"
                     listType: "CHOOSE BRO",
                     sections: [{
 								"title": "Bot by andymrlit",
@@ -2836,91 +2835,91 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 								]
 							},
 							{
-								"title": "✰➪MENU BOT✰➪",
+								"title": "MENU BOT",
 								"rows": [
 									{
-										"title": "✰➪All Menu",
+										"title": "All Menu",
 										"rowId": `${prefix}allmenu`
 									},
 									{
-										"title": "✰➪Grup Menu",
+										"title": "Grup Menu",
 										"rowId": `${prefix}groupmenu`
 									},
 									{
-										"title": "✰➪Webzone Menu",
+										"title": "Webzone Menu",
 										"rowId": `${prefix}webzone`
 									},
 									{
-										"title": "✰➪Download Menu",
+										"title": "Download Menu",
 										"rowId": `${prefix}download`
 									},
 									{
-										"title": "✰➪Search Menu",
+										"title": "Search Menu",
 										"rowId": `${prefix}search`
 									},
 									{
-										"title": "✰➪Random Menu",
+										"title": "Random Menu",
 										"rowId": `${prefix}random`
 									},
 									{
-										"title": "✰➪TextPro Menu",
+										"title": "TextPro Menu",
 										"rowId": `${prefix}textpro`
 									},
 									{
-										"title": "✰➪PhotoOxy Menu",
+										"title": "PhotoOxy Menu",
 										"rowId": `${prefix}photoxy`
 									},
 									{
-										"title": "✰➪Ephoto Menu",
+										"title": "Ephoto Menu",
 										"rowId": `${prefix}ephoto`
 									},
 									{
-										"title": "✰➪Menu Perdukunan",
+										"title": "Menu Perdukunan",
 										"rowId": `${prefix}dukun`
 									},
 									{
-										"title": "✰➪Fun Menu",
+										"title": "Fun Menu",
 										"rowId": `${prefix}fun`
 									},
 									{
-										"title": "✰➪Convert Menu",
+										"title": "Convert Menu",
 										"rowId": `${prefix}convert`
 									},
 									{
-										"title": "✰➪Islamic Menu",
+										"title": "Islamic Menu",
 										"rowId": `${prefix}islam`
 									},
 									{
-										"title": "✰➪Main Menu",
+										"title": "Main Menu",
 										"rowId": `${prefix}main`
 									},
 									{
-										"title": "✰➪Database Menu",
+										"title": "Database Menu",
 										"rowId": `${prefix}database`
 									},
 									{
-										"title": "✰➪Hengker Menu",
+										"title": "Hengker Menu",
 										"rowId": `${prefix}heker`
 									},
 									{
-										"title": "✰➪VN Menu",
+										"title": "VN Menu",
 										"rowId": `${prefix}vn`
 									},
 									{
-										"title": "✰➪Owner Menu",
+										"title": "Owner Menu",
 										"rowId": `${prefix}menuowner`
 									},
 									
 										]
 										},	
 										{
-								"title": "▪️🃏Menu Lain🃏▪️",
+								"title": "Menu Lain",
 								"rows": [
 									{
-										"title": "🃏Sewa Bot",
+										"title": "Sewa Bot",
 										"rowId": `${prefix}donate`
 									},
-									{    "title": "🃏Tutor Ngebot",
+									{    "title": "Tutor bot",
 							 "rowld": `${prefix}tutor` 
 							 }
 							]
@@ -2982,7 +2981,7 @@ break
  case 'allmenu': {
                 anu = `
 
-┌──⭓ *𝘈ndy•𝘔𝘋*
+┌──⭓ *Andy Md*
 │⭔ 𝘖𝘸𝘯𝘦𝘳: Andy 
 │⭔ 𝘝𝘦𝘳𝘴𝘪𝘰𝘯: 4.0
 │⭔ 𝘙𝘶𝘯𝘝𝘪𝘢: Okteto
@@ -3311,11 +3310,6 @@ ANDY MD
 ANDY|𝘷𝘦𝘳𝘴𝘪𝘰𝘯 4.0`
                  let btn = [{
                                 quickReplyButton: {
-                                    displayText: 'Andy',
-                                    id: 'tutor'
-                                }
-                            }, {
-                                quickReplyButton: {
                                     displayText: 'Donasi︎',
                                     id: 'donasi'
                                 }  
@@ -3368,11 +3362,6 @@ ANDY|𝘷𝘦𝘳𝘴𝘪𝘰𝘯 4.0`
 └───────⭓`
                  let btn = [{
                                 quickReplyButton: {
-                                    displayText: 'Tutor',
-                                    id: 'tutor'
-                                }
-                            }, {
-                                quickReplyButton: {
                                     displayText: 'Donasi︎',
                                     id: 'donasi'
                                 }  
@@ -3412,11 +3401,6 @@ case 'webzone': {
 │
 └───────⭓`
                  let btn = [{
-                                quickReplyButton: {
-                                    displayText: 'Tutor',
-                                    id: 'tutor'
-                                }
-                            }, {
                                 quickReplyButton: {
                                     displayText: 'Donasi︎',
                                     id: 'donasi'
@@ -3464,11 +3448,6 @@ case 'webzone': {
 └───────⭓`
                  let btn = [{
                                 quickReplyButton: {
-                                    displayText: 'Tutor',
-                                    id: 'tutor'
-                                }
-                            }, {
-                                quickReplyButton: {
                                     displayText: 'Donasi︎',
                                     id: 'donasi'
                                 }  
@@ -3509,11 +3488,6 @@ case 'webzone': {
 │
 └───────⭓`
                 let btn = [{
-                                quickReplyButton: {
-                                    displayText: 'Tutor',
-                                    id: 'tutor'
-                                }
-                            }, {
                                 quickReplyButton: {
                                     displayText: 'Donasi︎',
                                     id: 'donasi'
@@ -3563,11 +3537,6 @@ case 'webzone': {
 │
 └───────⭓`
                  let btn = [{
-                                quickReplyButton: {
-                                    displayText: 'Tutor',
-                                    id: 'tutor'
-                                }
-                            }, {
                                 quickReplyButton: {
                                     displayText: 'Donasi︎',
                                     id: 'donasi'
@@ -3632,11 +3601,6 @@ case 'webzone': {
 └───────⭓`
                 let btn = [{
                                 quickReplyButton: {
-                                    displayText: 'Tutor',
-                                    id: 'tutor'
-                                }
-                            }, {
-                                quickReplyButton: {
                                     displayText: 'Donasi︎',
                                     id: 'donasi'
                                 }  
@@ -3681,11 +3645,6 @@ case 'webzone': {
 └───────⭓`
                  let btn = [{
                                 quickReplyButton: {
-                                    displayText: 'Tutor',
-                                    id: 'tutor'
-                                }
-                            }, {
-                                quickReplyButton: {
                                     displayText: 'Donasi︎',
                                     id: 'donasi'
                                 }  
@@ -3726,11 +3685,6 @@ case 'webzone': {
 │
 └───────⭓`
                  let btn = [{
-                                quickReplyButton: {
-                                    displayText: 'Tutor',
-                                    id: 'tutor'
-                                }
-                            }, {
                                 quickReplyButton: {
                                     displayText: 'Donasi︎',
                                     id: 'donasi'
@@ -3777,11 +3731,6 @@ case 'webzone': {
 │
 └───────⭓`
                  let btn = [{
-                                quickReplyButton: {
-                                    displayText: 'Tutor',
-                                    id: 'tutor'
-                                }
-                            }, {
                                 quickReplyButton: {
                                     displayText: 'Donasi︎',
                                     id: 'donasi'
@@ -3845,11 +3794,6 @@ case 'webzone': {
 └───────⭓`
                 let btn = [{
                                 quickReplyButton: {
-                                    displayText: 'Tutor',
-                                    id: 'tutor'
-                                }
-                            }, {
-                                quickReplyButton: {
                                     displayText: 'Donasi︎',
                                     id: 'donasi'
                                 }  
@@ -3900,11 +3844,6 @@ case 'webzone': {
 └───────⭓`
                 let btn = [{
                                 quickReplyButton: {
-                                    displayText: 'Tutor',
-                                    id: 'tutor'
-                                }
-                            }, {
-                                quickReplyButton: {
                                     displayText: 'Donasi︎',
                                     id: 'donasi'
                                 }  
@@ -3947,11 +3886,6 @@ case 'webzone': {
 └───────⭓`
                  let btn = [{
                                 quickReplyButton: {
-                                    displayText: 'Tutor',
-                                    id: 'tutor'
-                                }
-                            }, {
-                                quickReplyButton: {
                                     displayText: 'Donasi︎',
                                     id: 'donasi'
                                 }  
@@ -3992,11 +3926,6 @@ case 'webzone': {
 └───────⭓`
                 let btn = [{
                                 quickReplyButton: {
-                                    displayText: 'Tutor',
-                                    id: 'tutor'
-                                }
-                            }, {
-                                quickReplyButton: {
                                     displayText: 'Donasi︎',
                                     id: 'donasi'
                                 }  
@@ -4031,11 +3960,6 @@ case 'webzone': {
 │
 └───────⭓`
                  let btn = [{
-                                quickReplyButton: {
-                                    displayText: 'Tutor',
-                                    id: 'tutor'
-                                }
-                            }, {
                                 quickReplyButton: {
                                     displayText: 'Donasi︎',
                                     id: 'donasi'
@@ -4072,11 +3996,6 @@ case 'webzone': {
 │
 └───────⭓`
                  let btn = [{
-                                quickReplyButton: {
-                                    displayText: 'Tutor',
-                                    id: 'tutor'
-                                }
-                            }, {
                                 quickReplyButton: {
                                     displayText: 'Donasi︎',
                                     id: 'donasi'
@@ -4120,11 +4039,6 @@ case 'webzone': {
 │
 └───────⭓`
                  let btn = [{
-                                quickReplyButton: {
-                                    displayText: 'Tutor',
-                                    id: 'tutor'
-                                }
-                            }, {
                                 quickReplyButton: {
                                     displayText: 'Donasi︎',
                                     id: 'donasi'
@@ -4171,11 +4085,6 @@ case 'webzone': {
 │
 └───────⭓`
                 let btn = [{
-                                quickReplyButton: {
-                                    displayText: 'Tutor',
-                                    id: 'tutor'
-                                }
-                            }, {
                                 quickReplyButton: {
                                     displayText: 'Donasi︎',
                                     id: 'donasi'
