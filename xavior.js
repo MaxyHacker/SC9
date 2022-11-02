@@ -534,16 +534,22 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
             break
 	    case 'donasi': case 'sewabot': case 'sewa': case 'buypremium': case 'donate': {
   goblok = fs.readFileSync('./video/ga.jpg')
-                xavior.sendMessage(m.chat, { image: goblok, caption: `┌──⭓ *Sewa Bot*
+                xavior.sendMessage(m.chat, { image: goblok, caption: `┌──⭓ *Sewa Bot*
+
+
 │⭔ 1 Minggu :10k
 │⭔ 1 Bulan :15k
 │⭔ Permanen :20k
 └───────⭓
-┌──⭓ *Jadi Bot*
+┌──⭓ *Jadi Bot*
+
+
 │⭔ Jasa Jadi Bot: 30k
 │⭔ Jadi Owner AzzBot: 15k
 └───────⭓
-┌──⭓ *Harga Sc Bot Wa*
+┌──⭓ *Harga Sc Bot Wa*
+
+
 │⭔ Versi 1 :20k
 │⭔ Versi 2 :25k
 │⭔ Free :Di Yt MBY•OFFICIAL
@@ -2815,13 +2821,13 @@ let capt = `⭔ Title: ${judul}
             case 'command':{
 let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                 listMessage :{
-                    title: `AzzBot Siap membantu anda\n`,
-                    description: "*Klik tombol dibawah*",
+                    title: `Bot by andymrlit\n`,
+                    description: "*please choose*",
                     buttonText: "Menu",
-                    footerText: "Note:JANGAN SPAM!!",
-                    listType: "SINGLE_SELECT",
+                    footerText: "do not spam!!",
+                    listType: "CHOOSE BRO",
                     sections: [{
-								"title": "🤖Bot By MBY•OFFICIAL🤖",
+								"title": "Bot by andymrlit",
 								"rows": [
 									{
 										"title": "▪️Tutor Pasang Bot",
@@ -2936,26 +2942,24 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
             break
 
             
-            case 'okay': { m.reply('Subrek lah Yt MBY•OFFICIAL')} break
+            case 'okay': { m.reply('Contact andymrlit')} break
             
              case 'menu': {
             anu = `── *Welcome* ──
-Hai Saya Bot Wa
-Siap Melayani Anda
-Ketik (.menu) Untuk Mengakses
-Mau Script? Bisa Chat Owner
-Thanks Sudah Menggunakan
-AzzBot-MD Jangan Lupa Subscribe
-Chanel : https://youtube.com/channel/UCmUhiytK9WMYaOFgdOho_2g
-Nih Musik Buat Menghibur
+Hello bro
+i am andy md
+bot created by andy
+contact owner to get
+script link thanks
+for using my bot
 ───────⭓`
             let btn = [{
                                 
                                 quickReplyButton: {
-                                    displayText: '✰➪Daftar Fitur',
+                                    displayText: 'Menu',
                                     id: 'command'
                             }    }, {quickReplyButton: {
-                                    displayText: 'Thanks👌',
+                                    displayText: 'Thanks',
                                     id: 'okay'}
                                                                           
                             }]
@@ -2978,10 +2982,10 @@ break
  case 'allmenu': {
                 anu = `
 
-┌──⭓ *𝘈𝘻𝘻𝘉𝘰𝘵•𝘔𝘋*
-│⭔ 𝘖𝘸𝘯𝘦𝘳:𝗬𝗮𝗵𝘆𝗮 
+┌──⭓ *𝘈ndy•𝘔𝘋*
+│⭔ 𝘖𝘸𝘯𝘦𝘳: Andy 
 │⭔ 𝘝𝘦𝘳𝘴𝘪𝘰𝘯: 4.0
-│⭔ 𝘙𝘶𝘯𝘝𝘪𝘢:𝘏𝘦𝘳𝘰𝘬𝘶
+│⭔ 𝘙𝘶𝘯𝘝𝘪𝘢: Okteto
 └───────⭓
 
 
@@ -3303,31 +3307,21 @@ break
 │
 └───────⭓
 
-𝐀𝐳𝐳𝐁𝐨𝐭•𝐌𝐃
-𝐁𝐲:𝐘𝐚𝐡𝐲𝐚𝐆𝐚𝐧𝐳𝐳|𝘷𝘦𝘳𝘴𝘪𝘰𝘯 4.0`
+ANDY MD
+ANDY|𝘷𝘦𝘳𝘴𝘪𝘰𝘯 4.0`
                  let btn = [{
-                                urlButton: {
-                                    displayText: 'Script',
-                                    url: 'https://youtube.com/channel/UCmUhiytK9WMYaOFgdOho_2g'
-                                }
-                            }, {
-                                callButton: {
-                                    displayText: 'Contact Owner',
-                                    phoneNumber: '+62 815-1148-0762'
-                                }
-                            }, {
                                 quickReplyButton: {
-                                    displayText: '✰➪Tutor',
+                                    displayText: 'Andy',
                                     id: 'tutor'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Donasi☕︎',
+                                    displayText: 'Donasi︎',
                                     id: 'donasi'
                                 }  
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Like👍..',
+                                    displayText: 'Like',
                                     id: 'subscribe'
                                 }
                             }]
@@ -3373,28 +3367,18 @@ break
 │
 └───────⭓`
                  let btn = [{
-                                urlButton: {
-                                    displayText: 'Script',
-                                    url: 'https://youtube.com/channel/UCmUhiytK9WMYaOFgdOho_2g'
-                                }
-                            }, {
-                                callButton: {
-                                    displayText: 'Contact Owner',
-                                    phoneNumber: '+62 815-1148-0762'
-                                }
-                            }, {
                                 quickReplyButton: {
-                                    displayText: '✰➪Tutor',
+                                    displayText: 'Tutor',
                                     id: 'tutor'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Donasi☕︎',
+                                    displayText: 'Donasi︎',
                                     id: 'donasi'
                                 }  
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Like👍..',
+                                    displayText: 'Like',
                                     id: 'subscribe'
                                 }
                             }]
@@ -3428,28 +3412,18 @@ case 'webzone': {
 │
 └───────⭓`
                  let btn = [{
-                                urlButton: {
-                                    displayText: 'Script',
-                                    url: 'https://youtube.com/channel/UCmUhiytK9WMYaOFgdOho_2g'
-                                }
-                            }, {
-                                callButton: {
-                                    displayText: 'Contact Owner',
-                                    phoneNumber: '+62 815-1148-0762'
-                                }
-                            }, {
                                 quickReplyButton: {
-                                    displayText: '✰➪Tutor',
+                                    displayText: 'Tutor',
                                     id: 'tutor'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Donasi☕︎',
+                                    displayText: 'Donasi︎',
                                     id: 'donasi'
                                 }  
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Like👍..',
+                                    displayText: 'Like',
                                     id: 'subscribe'
                                 }
                             }]
@@ -3489,28 +3463,18 @@ case 'webzone': {
 │
 └───────⭓`
                  let btn = [{
-                                urlButton: {
-                                    displayText: 'Script',
-                                    url: 'https://youtube.com/channel/UCmUhiytK9WMYaOFgdOho_2g'
-                                }
-                            }, {
-                                callButton: {
-                                    displayText: 'Contact Owner',
-                                    phoneNumber: '+62 815-1148-0762'
-                                }
-                            }, {
                                 quickReplyButton: {
-                                    displayText: '✰➪Tutor',
+                                    displayText: 'Tutor',
                                     id: 'tutor'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Donasi☕︎',
+                                    displayText: 'Donasi︎',
                                     id: 'donasi'
                                 }  
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Like👍..',
+                                    displayText: 'Like',
                                     id: 'subscribe'
                                 }
                             }]
@@ -3545,28 +3509,18 @@ case 'webzone': {
 │
 └───────⭓`
                 let btn = [{
-                                urlButton: {
-                                    displayText: 'Script',
-                                    url: 'https://youtube.com/channel/UCmUhiytK9WMYaOFgdOho_2g'
-                                }
-                            }, {
-                                callButton: {
-                                    displayText: 'Contact Owner',
-                                    phoneNumber: '+62 815-1148-0762'
-                                }
-                            }, {
                                 quickReplyButton: {
-                                    displayText: '✰➪Tutor',
+                                    displayText: 'Tutor',
                                     id: 'tutor'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Donasi☕︎',
+                                    displayText: 'Donasi︎',
                                     id: 'donasi'
                                 }  
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Like👍..',
+                                    displayText: 'Like',
                                     id: 'subscribe'
                                 }
                             }]
@@ -3609,28 +3563,18 @@ case 'webzone': {
 │
 └───────⭓`
                  let btn = [{
-                                urlButton: {
-                                    displayText: 'Script',
-                                    url: 'https://youtube.com/channel/UCmUhiytK9WMYaOFgdOho_2g'
-                                }
-                            }, {
-                                callButton: {
-                                    displayText: 'Contact Owner',
-                                    phoneNumber: '+62 815-1148-0762'
-                                }
-                            }, {
                                 quickReplyButton: {
-                                    displayText: '✰➪Tutor',
+                                    displayText: 'Tutor',
                                     id: 'tutor'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Donasi☕︎',
+                                    displayText: 'Donasi︎',
                                     id: 'donasi'
                                 }  
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Like👍..',
+                                    displayText: 'Like',
                                     id: 'subscribe'
                                 }
                             }]
@@ -3687,28 +3631,18 @@ case 'webzone': {
 │
 └───────⭓`
                 let btn = [{
-                                urlButton: {
-                                    displayText: 'Script',
-                                    url: 'https://youtube.com/channel/UCmUhiytK9WMYaOFgdOho_2g'
-                                }
-                            }, {
-                                callButton: {
-                                    displayText: 'Contact Owner',
-                                    phoneNumber: '+62 815-1148-0762'
-                                }
-                            }, {
                                 quickReplyButton: {
-                                    displayText: '✰➪Tutor',
+                                    displayText: 'Tutor',
                                     id: 'tutor'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Donasi☕︎',
+                                    displayText: 'Donasi︎',
                                     id: 'donasi'
                                 }  
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Like👍..',
+                                    displayText: 'Like',
                                     id: 'subscribe'
                                 }
                             }]
@@ -3746,28 +3680,18 @@ case 'webzone': {
 │
 └───────⭓`
                  let btn = [{
-                                urlButton: {
-                                    displayText: 'Script',
-                                    url: 'https://youtube.com/channel/UCmUhiytK9WMYaOFgdOho_2g'
-                                }
-                            }, {
-                                callButton: {
-                                    displayText: 'Contact Owner',
-                                    phoneNumber: '+62 815-1148-0762'
-                                }
-                            }, {
                                 quickReplyButton: {
-                                    displayText: '✰➪Tutor',
+                                    displayText: 'Tutor',
                                     id: 'tutor'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Donasi☕︎',
+                                    displayText: 'Donasi︎',
                                     id: 'donasi'
                                 }  
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Like👍..',
+                                    displayText: 'Like',
                                     id: 'subscribe'
                                 }
                             }]
@@ -3802,28 +3726,18 @@ case 'webzone': {
 │
 └───────⭓`
                  let btn = [{
-                                urlButton: {
-                                    displayText: 'Script',
-                                    url: 'https://youtube.com/channel/UCmUhiytK9WMYaOFgdOho_2g'
-                                }
-                            }, {
-                                callButton: {
-                                    displayText: 'Contact Owner',
-                                    phoneNumber: '+62 815-1148-0762'
-                                }
-                            }, {
                                 quickReplyButton: {
-                                    displayText: '✰➪Tutor',
+                                    displayText: 'Tutor',
                                     id: 'tutor'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Donasi☕︎',
+                                    displayText: 'Donasi︎',
                                     id: 'donasi'
                                 }  
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Like👍..',
+                                    displayText: 'Like',
                                     id: 'subscribe'
                                 }
                             }]
@@ -3863,28 +3777,18 @@ case 'webzone': {
 │
 └───────⭓`
                  let btn = [{
-                                urlButton: {
-                                    displayText: 'Script',
-                                    url: 'https://youtube.com/channel/UCmUhiytK9WMYaOFgdOho_2g'
-                                }
-                            }, {
-                                callButton: {
-                                    displayText: 'Contact Owner',
-                                    phoneNumber: '+62 815-1148-0762'
-                                }
-                            }, {
                                 quickReplyButton: {
-                                    displayText: '✰➪Tutor',
+                                    displayText: 'Tutor',
                                     id: 'tutor'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Donasi☕︎',
+                                    displayText: 'Donasi︎',
                                     id: 'donasi'
                                 }  
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Like👍..',
+                                    displayText: 'Like',
                                     id: 'subscribe'
                                 }
                             }]
@@ -3940,28 +3844,18 @@ case 'webzone': {
 │
 └───────⭓`
                 let btn = [{
-                                urlButton: {
-                                    displayText: 'Script',
-                                    url: 'https://youtube.com/channel/UCmUhiytK9WMYaOFgdOho_2g'
-                                }
-                            }, {
-                                callButton: {
-                                    displayText: 'Contact Owner',
-                                    phoneNumber: '+62 815-1148-0762'
-                                }
-                            }, {
                                 quickReplyButton: {
-                                    displayText: '✰➪Tutor',
+                                    displayText: 'Tutor',
                                     id: 'tutor'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Donasi☕︎',
+                                    displayText: 'Donasi︎',
                                     id: 'donasi'
                                 }  
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Like👍..',
+                                    displayText: 'Like',
                                     id: 'subscribe'
                                 }
                             }]
@@ -4005,28 +3899,18 @@ case 'webzone': {
 │
 └───────⭓`
                 let btn = [{
-                                urlButton: {
-                                    displayText: 'Script',
-                                    url: 'https://youtube.com/channel/UCmUhiytK9WMYaOFgdOho_2g'
-                                }
-                            }, {
-                                callButton: {
-                                    displayText: 'Contact Owner',
-                                    phoneNumber: '+62 815-1148-0762'
-                                }
-                            }, {
                                 quickReplyButton: {
-                                    displayText: '✰➪Tutor',
+                                    displayText: 'Tutor',
                                     id: 'tutor'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Donasi☕︎',
+                                    displayText: 'Donasi︎',
                                     id: 'donasi'
                                 }  
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Like👍..',
+                                    displayText: 'Like',
                                     id: 'subscribe'
                                 }
                             }]
@@ -4062,28 +3946,18 @@ case 'webzone': {
 │
 └───────⭓`
                  let btn = [{
-                                urlButton: {
-                                    displayText: 'Script',
-                                    url: 'https://youtube.com/channel/UCmUhiytK9WMYaOFgdOho_2g'
-                                }
-                            }, {
-                                callButton: {
-                                    displayText: 'Contact Owner',
-                                    phoneNumber: '+62 815-1148-0762'
-                                }
-                            }, {
                                 quickReplyButton: {
-                                    displayText: '✰➪Tutor',
+                                    displayText: 'Tutor',
                                     id: 'tutor'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Donasi☕︎',
+                                    displayText: 'Donasi︎',
                                     id: 'donasi'
                                 }  
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Like👍..',
+                                    displayText: 'Like',
                                     id: 'subscribe'
                                 }
                             }]
@@ -4117,28 +3991,18 @@ case 'webzone': {
 │
 └───────⭓`
                 let btn = [{
-                                urlButton: {
-                                    displayText: 'Script',
-                                    url: 'https://youtube.com/channel/UCmUhiytK9WMYaOFgdOho_2g'
-                                }
-                            }, {
-                                callButton: {
-                                    displayText: 'Contact Owner',
-                                    phoneNumber: '+62 815-1148-0762'
-                                }
-                            }, {
                                 quickReplyButton: {
-                                    displayText: '✰➪Tutor',
+                                    displayText: 'Tutor',
                                     id: 'tutor'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Donasi☕︎',
+                                    displayText: 'Donasi︎',
                                     id: 'donasi'
                                 }  
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Like👍..',
+                                    displayText: 'Like',
                                     id: 'subscribe'
                                 }
                             }]
@@ -4167,28 +4031,18 @@ case 'webzone': {
 │
 └───────⭓`
                  let btn = [{
-                                urlButton: {
-                                    displayText: 'Script',
-                                    url: 'https://youtube.com/channel/UCmUhiytK9WMYaOFgdOho_2g'
-                                }
-                            }, {
-                                callButton: {
-                                    displayText: 'Contact Owner',
-                                    phoneNumber: '+62 815-1148-0762'
-                                }
-                            }, {
                                 quickReplyButton: {
-                                    displayText: '✰➪Tutor',
+                                    displayText: 'Tutor',
                                     id: 'tutor'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Donasi☕︎',
+                                    displayText: 'Donasi︎',
                                     id: 'donasi'
                                 }  
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Like👍..',
+                                    displayText: 'Like',
                                     id: 'subscribe'
                                 }
                             }]
@@ -4218,28 +4072,18 @@ case 'webzone': {
 │
 └───────⭓`
                  let btn = [{
-                                urlButton: {
-                                    displayText: 'Script',
-                                    url: 'https://youtube.com/channel/UCmUhiytK9WMYaOFgdOho_2g'
-                                }
-                            }, {
-                                callButton: {
-                                    displayText: 'Contact Owner',
-                                    phoneNumber: '+62 815-1148-0762'
-                                }
-                            }, {
                                 quickReplyButton: {
-                                    displayText: '✰➪Tutor',
+                                    displayText: 'Tutor',
                                     id: 'tutor'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Donasi☕︎',
+                                    displayText: 'Donasi︎',
                                     id: 'donasi'
                                 }  
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Like👍..',
+                                    displayText: 'Like',
                                     id: 'subscribe'
                                 }
                             }]
@@ -4276,28 +4120,18 @@ case 'webzone': {
 │
 └───────⭓`
                  let btn = [{
-                                urlButton: {
-                                    displayText: 'Script',
-                                    url: 'https://youtube.com/channel/UCmUhiytK9WMYaOFgdOho_2g'
-                                }
-                            }, {
-                                callButton: {
-                                    displayText: 'Contact Owner',
-                                    phoneNumber: '+62 815-1148-0762'
-                                }
-                            }, {
                                 quickReplyButton: {
-                                    displayText: '✰➪Tutor',
+                                    displayText: 'Tutor',
                                     id: 'tutor'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Donasi☕︎',
+                                    displayText: 'Donasi︎',
                                     id: 'donasi'
                                 }  
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Like👍..',
+                                    displayText: 'Like',
                                     id: 'subscribe'
                                 }
                             }]
@@ -4337,28 +4171,18 @@ case 'webzone': {
 │
 └───────⭓`
                 let btn = [{
-                                urlButton: {
-                                    displayText: 'Script',
-                                    url: 'https://youtube.com/channel/UCmUhiytK9WMYaOFgdOho_2g'
-                                }
-                            }, {
-                                callButton: {
-                                    displayText: 'Contact Owner',
-                                    phoneNumber: '+62 815-1148-0762'
-                                }
-                            }, {
                                 quickReplyButton: {
-                                    displayText: '✰➪Tutor',
+                                    displayText: 'Tutor',
                                     id: 'tutor'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Donasi☕︎',
+                                    displayText: 'Donasi︎',
                                     id: 'donasi'
                                 }  
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Like👍..',
+                                    displayText: 'Like',
                                     id: 'subscribe'
                                 }
                             }]
