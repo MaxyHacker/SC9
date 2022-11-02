@@ -2945,24 +2945,42 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
             case 'okay': { m.reply('Contact andymrlit')} break
             
              case 'menu': {
-            anu = `── *Welcome* ──
-Hello bro
-i am andy md
-bot created by andy
-contact owner to get
-script link thanks
-for using my bot
-───────⭓`
-            let btn = [{
-                                
-                                quickReplyButton: {
-                                    displayText: 'Menu',
-                                    id: 'command'
-                            }    }, {quickReplyButton: {
-                                    displayText: 'Thanks',
-                                    id: 'okay'}
-                                                                          
-                            }]
+            anu = `┌────────┈❖
+│「 Hi, ${pushname}👋 」
+│this software is a whatsapp bot
+│created by andymrlit there can be a lot 
+│help you, for example, to do research
+│faster, download music videos etc.
+│ without snaptube click on the button
+│menu to see the orders thank you 
+└┬─────────────┈❖
+┌┤「 INFO USER 」
+│└─────────────┈❖
+│ Name : ${pushname}
+│ Number : ${m.sender.split('@')[0]}
+│ Status : ${isCreator ? 'Owner' : 'User'
+└┬─────────────┈❖
+┌┤「 INFO BOT 」
+│└─────────────┈❖
+│ Prefix : MULTI PREFIX
+│ Name : POWER BOT
+│ Owner : ANDY
+│ Platform : HEROKU
+│ Runtime :
+│  ${runtime(process.uptime())}
+│ Language : Javascript
+│ Lib : Baileys-md
+└┬─────────────┈❖
+┌┤「 INFO TIME 」
+│└─────────────┈❖
+│ Tanggal Server : ${moment.tz('Asia/Jakarta').format('DD/MM/YY')}
+│ Waktu Server : ${moment.tz('Asia/Jakarta').format('HH:mm:ss')}
+│ Creator andymrlit
+│ WIB : ${wib}
+│ WITA : ${wita}
+│ WIT : ${wit}
+└──────────────┈❖`
+                        let buttons = [{ buttonId: 'command', buttonText: { displayText: 'Menu list' }, type: 1 },{ buttonId: 'allmenu', buttonText: { displayText: '📖All Menu' }, type: 1 },{ buttonId: '.owner', buttonText: { displayText: 'Owner' }],   
                          let setbot = db.data.settings[botNumber]
                         if (setbot.templateImage) {
                         xavior.send5ButImg(m.chat, anu, global.author, global.thumb, btn, global.thumb)
@@ -3305,10 +3323,7 @@ break
 │⭔ ${prefix}setmenu [option]
 │⭔ ${prefix}anticall [on/off]
 │
-└───────⭓
-
-ANDY MD
-ANDY|𝘷𝘦𝘳𝘴𝘪𝘰𝘯 4.0`
+└───────⭓'
                  let btn = [{
                                 quickReplyButton: {
                                     displayText: 'Donasi︎',
