@@ -2944,58 +2944,39 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
             
             case 'okay': { m.reply('Contact andymrlit')} break
             
-case 'alive': case 'panel': case 'list': case 'menu': case 'help': case '?': {
-            let ownernya = ownernomer + '@s.whatsapp.net'
-            let me = m.sender
-            let timestampe = speed();
-            let latensie = speed() - timestampe
-            let xeonezy = `┌─❖
-│「 Bro 🇺🇲 」
-└┬❖ 「 ${pushname} 」
-┌┤✑  ${ucapanWaktu} 😎
-│└────────────┈ ⳹
-│
-└─「 𝘽𝙊𝙏 𝙄𝙉𝙁𝙊 」       
-│𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds
-│𝗥𝘂𝗻𝘁𝗶𝗺𝗲 : ${runtime(process.uptime())}
-│𝗣𝗼𝘄𝗲𝗿𝗲𝗱 : @${ini_mark.split('@')[0]}
-│𝗕𝗼𝘁 : USA BOT MD 🇺🇲
-│𝗢𝘄𝗻𝗲𝗿 : ANDYMRLIT
-│𝗣𝗿𝗲𝗳𝗶𝘅 : 「 NO-PREFIX 」
-│𝗣𝗹𝗮𝘁𝗳𝗼𝗿𝗺 : ${os.platform()}
-│𝗧𝗼𝘁𝗮𝗹 𝗨𝘀𝗲𝗿 : ${Object.keys(global.db.data.users).length}
-│
-└─「 𝙐𝙎𝙀𝙍 𝙄𝙉𝙁𝙊 」
-│𝗡𝗮𝗺𝗲 : ${pushname}
-│𝗡𝘂𝗺𝗯𝗲𝗿 : @${me.split('@')[0]}
-└─「 CREDIT 」
-│Creator andymrlit
-└┬────────────┈ ⳹
-   │✑  Please Select
-   │✑  The Button Below
-   └─────────────┈ ⳹`
-            let ments = [ownernya, me, ini_mark]        
-            let buttons = [{ buttonId: 'allmenu', buttonText: { displayText: 'All Menu' }, type: 1 },{ buttonId: 'command', buttonText: { displayText: 'List Menu' }, type: 1 },{ buttonId: '.owner', buttonText: { displayText: 'Creator' }, type: 1 }]
-            let buttonMessage = {
-  document: fs.readFileSync('.foto/cheems.xlsx'),
-  fileName : `${groupMetadata.subject}`,
-  mimetype: `${docs}`,
-  fileLength: '99999999999999',
-  pageCount: '1000000000',
-  caption: xeonezy,
-  footer: botname,
-  buttons: buttons,
-  headerType: 4,
-  contextInfo:{externalAdReply:{
-  title: botname,
-  body: wm, 
-  showAdAttribution: true,
-  thumbnail: thumb,
-  mediaType: 2,
-  }}
-  }
- break
-                
+             case 'menu': {
+            anu = `── *Welcome* ──
+Hello bro
+i am andy md
+bot created by andy
+contact owner to get
+script link thanks
+for using my bot
+───────⭓`
+            let btn = [{
+                                
+                                quickReplyButton: {
+                                    displayText: 'Menu',
+                                    id: 'command'
+                            }    }, {quickReplyButton: {
+                                    displayText: 'Thanks',
+                                    id: 'okay'}
+                                                                          
+                            }]
+                         let setbot = db.data.settings[botNumber]
+                        if (setbot.templateImage) {
+                        xavior.send5ButImg(m.chat, anu, global.author, global.thumb, btn, global.thumb)
+                        } else if (setbot.templateGif) {
+                        xavior.send5ButGif(m.chat, anu, global.author, global.kontolgeming, btn, global.thumb)
+                        } else if (setbot.templateVid) {
+                        xavior.send5ButVid(m.chat, anu, global.author, global.kontolgeming, btn, global.thumb)
+                        } else if (setbot.templateMsg) {
+                        xavior.send5ButMsg(m.chat, anu, global.author, btn)
+                        } else if (setbot.templateLocation) {
+                        xavior.send5ButLoc(m.chat, anu, global.author, global.thumb, btn)
+                        } tutor = fs.readFileSync('./tutor/selamatdatang.mp3')
+                        xavior.sendMessage(m.chat, {audio: tutor, mimetype:'audio/mpeg', ptt:true }, {quoted:m})
+                        }
 break       
      
  case 'allmenu': {
