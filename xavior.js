@@ -2821,10 +2821,11 @@ let capt = `⭔ Title: ${judul}
             case 'command':{
 let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                 listMessage :{
-                    title: `Bot by andymrlit\n`,
-                    description: "*please choose*",
-                    buttonText: "Menu"
-                    listType: "CHOOSE BRO",
+                    title: `AzzBot Siap membantu anda\n`,
+                    description: "*Klik tombol dibawah*",
+                    buttonText: "Menu",
+                    footerText: "Note:JANGAN SPAM!!",
+                    listType: "SINGLE_SELECT",
                     sections: [{
 								"title": "Bot by andymrlit",
 								"rows": [
